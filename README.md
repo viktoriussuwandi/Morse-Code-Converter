@@ -12,8 +12,8 @@
 2. Consist of :
    - Function to convert `csv source` into propper `data` for processing.
    - Function for user to input some `letter` or `symbol` or `number`.
-   - Function to convert user input into morse code
+   - Function to convert user input into morse code.
 
 3. Potential improvement :
-   - Website for better user experience
-   - Proper database to store characters and morse codes. 
+   - Website for better `user experience`.
+   - Proper database to `store` characters and morse codes. 
