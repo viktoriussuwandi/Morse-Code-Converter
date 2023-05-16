@@ -5,26 +5,21 @@ def get_data() :
   data   = morse.df.to_dict()
   return data
 
-def get_result() :
+def convert_result() :
   data = get_data()
   chars  = [ val for (key,val) in data['char'].items() ]
   morses = [ val for (key,val) in data['code'].items() ]
 
-  # inputs = input('Insert some words : ')
-  inputs  = ['c', 'h', 'a', 'r', 'l', 'l', 'i', 'e']
+  letters = input('Insert some words : ')
+  inputs  = [ i for i in letters ]
   
-  index_results = [
-    chars.index(i.upper()) for i in inputs if 
-    i.upper() in [v for v in chars]
-  ]
-  
-  results = [ morses[i] for i in index_results ]
-
-  for i in range( len(inputs)-1 ) :
-    input = inputs[i].upper()
-    if input not in [ c for c in chars] : print(f'{ inputs[i] } : ')
+  # inputs  = ['c', 'h', 'a', 'r', 'l', 'l', 'i', 'e']
+  for i in range( len(inputs) ) :
+    input_char = inputs[i].upper()
+    if input_char not in chars :
+      print(f'{ inputs[i] } : ')
     else :
-      index_result = 
-      print(f'{ inputs[i] } : { results[ chars.index(input) ] }')
+      result = morses[ chars.index(input_char) ]
+      print(f'{ inputs[i] } : { result }')
 
-get_result()
+convert_result()
