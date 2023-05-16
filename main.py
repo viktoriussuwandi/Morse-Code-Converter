@@ -11,7 +11,7 @@ def convert_result() :
   morses = [ val for (key,val) in data['code'].items() ]
 
   letters = input('Insert some words : ')
-  inputs  = [ i for i in letters ]
+  inputs  = [ i for i in letters if i != ' ' ]
   
   for i in range( len(inputs) ) :
     input_char = inputs[i].upper()
