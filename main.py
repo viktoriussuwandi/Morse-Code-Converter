@@ -10,8 +10,8 @@ def convert_result() :
   chars  = [ val for (key,val) in data['char'].items() ]
   morses = [ val for (key,val) in data['code'].items() ]
 
-  letters = input('Insert some words : ')
-  inputs  = [ i for i in letters if i != ' ' ]
+  users  = input('Insert some words : ')
+  inputs = [ i for i in users if i != ' ' ]
   
   for i in range( len(inputs) ) :
     input_char = inputs[i].upper()
