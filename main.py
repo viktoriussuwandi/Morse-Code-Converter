@@ -13,7 +13,6 @@ def convert_result() :
   letters = input('Insert some words : ')
   inputs  = [ i for i in letters ]
   
-  # inputs  = ['c', 'h', 'a', 'r', 'l', 'l', 'i', 'e']
   for i in range( len(inputs) ) :
     input_char = inputs[i].upper()
     if input_char not in chars :
