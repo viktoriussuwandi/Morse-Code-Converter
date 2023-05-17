@@ -14,7 +14,7 @@
    - Function for user to input some `letter` or `symbol` or `number`.
    - Function to convert user input into morse code.
 
-3. Potential improvement :
+3. Future improvement idea :
    - Website for better `user experience`.
    - Proper database to `store` characters and morse codes.
    - Add more `symbols`, or `characters` on the list.
