@@ -18,3 +18,5 @@
    - Website for better `user experience`.
    - Proper database to `store` characters and morse codes.
    - Add more `symbols`, or `characters` on the list.
+
+![cover](cover.jpg)
